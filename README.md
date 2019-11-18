@@ -9,7 +9,6 @@ Purpose: This parking garage simulation uses a class object to
 create a virtual garage, and a Falcon API app to control it.
 
 Notes: See requirements.txt for package requirements.
-       To run service, from 'src/garage/', run server.py. You may need to mark src as a source root, depending on your system's configuration.
+       To run service, from 'src/garage/', run server.py. You may need to mark 'src' as a source root, depending on your system's configuration.
        Unit tests are located in 'tests/test_garage_parking.py' and 'tests/test_garage_status.py'.
        See swagger document for service specifications.
-  
