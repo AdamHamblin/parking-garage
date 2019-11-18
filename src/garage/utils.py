@@ -2,7 +2,6 @@ import logging
 
 import src.garage.status_codes as status_codes
 
-
 logger = logging.getLogger(__name__)
 
 
