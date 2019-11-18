@@ -1,9 +1,9 @@
 import logging
 
+from src.garage import utils
 from src.garage.api.garage import (Garage,
                                    build_garage_doc,
                                    write_garage_doc)
-from src.garage import utils
 
 logger = logging.getLogger(__name__)
 
