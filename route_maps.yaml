@@ -1,8 +1,8 @@
 routes:
     - route: 'status'
       module_map:
-      GET:
-        module_name: 'garage.api.status'
+        GET:
+          module_name: 'garage.api.status'
     - route: 'parking'
       module_map:
         PUT:
