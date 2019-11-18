@@ -1,17 +1,9 @@
-from enum import Enum
-import os
 import json
 import logging
-import sys
-
-# dir_path = os.path.dirname(os.path.realpath(__file__))
-# project_root, tail = os.path.split(dir_path)
-# sys.path.insert(0, os.path.abspath(os.path.join(project_root, '..')))
+import os
+from enum import Enum
 
 from src.garage.utils import APIError, status_codes
-
-# from context import APIError, status_codes
-# from utils import APIError, status_codes
 
 logger = logging.getLogger(__name__)
 
