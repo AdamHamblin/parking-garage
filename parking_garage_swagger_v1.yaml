@@ -1,0 +1,237 @@
+swagger: '2.0'
+info:
+  title: Parking Garage Admin API
+  description: This API interacts with a Garage class to perform basic operations of a functional parking garage.
+  version: '1.0.0'
+  contact:
+    email: "ahamblin84@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+basePath: /garage/v1
+schemes:
+  - http
+paths:
+  '/status':
+    get:
+      description: Status of garage
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            type: object
+            required:
+              - name
+              - max_capacity
+              - occupancy
+              - cars
+              - motorcycles
+              - buses
+              - available
+              - available_spot_types
+              - available_spots_total
+              - available_spots
+              - assigned_spots
+              - next_car_spot
+              - next_moto_spot
+              - next_bus_spot
+            properties:
+              name:
+                description: name of garage
+                type: string
+                example: "Main Garage"
+              max_capacity:
+                description: maximum capacity of garage
+                type: integer
+                example: 120
+              occupancy:
+                description: number of vehicles currently in garage
+                type: integer
+                example: 20
+              cars:
+                description: number of cars currently in garage
+                type: integer
+                example: 10
+              motorcycles:
+                description: number of motorcycles currently in garage
+                type: integer
+                example: 5
+              buses:
+                description: number of buses currently in garage
+                type: integer
+                example: 2
+              available:
+                description: available status of garage
+                type: string
+                example: 'True'
+              available_spot_types:
+                description: vehicle types for which spots are available
+                type: array
+                items:
+                  type: string
+                  example: 'BUS'
+              available_spots_total:
+                description: number of available spots
+                type: integer
+                example: 100
+              available_spots:
+                description: list of all available spots
+                type: array
+                items:
+                  type: string
+                example: ['7', '8', '9', '12', '15', '16']
+              assigned_spots:
+                description: list of all assigned spots
+                type: array
+                items:
+                  type: string
+                example: ['1', '2', '3', '4', '5', '6', '10', '11', '13', '14']
+              next_car_spot:
+                description: next available car spot id
+                type: string
+                example: '7'
+              next_moto_spot:
+                description: next available motorcycle spot id
+                type: string
+                example: '7'
+              next_bus_spot:
+                description: next available bus spot ids
+                type: array
+                items:
+                  type: string
+                example: ['1', '2', '3', '4', '5']
+        '400':
+          $ref: '#/responses/400_error_def'
+        '404':
+          $ref: '#/responses/404_error_def'
+        '500':
+          $ref: '#/responses/500_error_def'
+  '/park':
+    put:
+      description: Park vehicle in garage
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: requestBody
+          description: contains required parameters of the request
+          required: true
+          schema:
+            type: object
+            required:
+              - vehicle_type
+            properties:
+              vehicle_type:
+                description: vehicle type (0=Motorcycle, 1=Car, 2=Bus)
+                type: integer
+                example: 1
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            type: object
+            required:
+              - vehicle_id
+              - vehicle_type
+              - level
+              - row
+              - spot_id
+              - spot_type
+            properties:
+              vehicle_id:
+                description: assigned vehicle id
+                type: string
+                example: "1"
+              vehicle_type:
+                description: vehicle type
+                type: string
+                example: 'CAR'
+              level:
+                description: level id
+                type: string
+                example: '1'
+              row:
+                description: row id
+                type: string
+                example: '1'
+              spot_id:
+                description: spot id
+                type: string
+                example: '4'
+              spot_type:
+                description: spot type
+                type: string
+                example: 'COMPACT'
+        '400':
+          $ref: '#/responses/400_error_def'
+        '404':
+          $ref: '#/responses/404_error_def'
+        '500':
+          $ref: '#/responses/500_error_def'
+  '/exit':
+    delete:
+      description: Exit vehicle from garage
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: requestBody
+          description: contains required parameters of the request
+          required: true
+          schema:
+            type: object
+            required:
+              - vehicle_id
+              - level
+              - row
+              - spot_id
+            properties:
+              vehicle_id:
+                description: assigned vehicle id
+                type: string
+                example: "1"
+              level:
+                description: level id
+                type: string
+                example: '1'
+              row:
+                description: row id
+                type: string
+                example: '1'
+              spot_id:
+                description: spot id
+                type: string
+                example: '4'
+      responses:
+        '200':
+          description: Successful response
+        '400':
+          $ref: '#/responses/400_error_def'
+        '404':
+          $ref: '#/responses/404_error_def'
+        '500':
+          $ref: '#/responses/500_error_def'
+responses:
+  400_error_def:
+    description: Bad Request
+    schema:
+      description: >-
+        "errors": an array of error objects containing error information
+        returned on an unsuccessful call
+      type: object
+  404_error_def:
+    description: Not Found
+    schema:
+      description: >-
+        "errors": an array of error objects containing error information
+        returned on an unsuccessful call
+      type: object
+  500_error_def:
+    description: Internal Server Error
+    schema:
+      description: >-
+        "errors": an array of error objects containing error information
+        returned on an unsuccessful call
+      type: object

@@ -1,0 +1,574 @@
+{
+  "name": "Main Garage v1",
+  "levels": {
+    "0": {
+      "rows": {
+        "0": {
+          "spots": {
+            "0": {
+              "spot_type": 0,
+              "vehicle": {
+                "vehicle_type": 0,
+                "vehicle_id": "0"
+              }
+            },
+            "1": {
+              "spot_type": 0,
+              "vehicle": {
+                "vehicle_type": 0,
+                "vehicle_id": "3"
+              }
+            },
+            "2": {
+              "spot_type": 1,
+              "vehicle": {
+                "vehicle_type": 1,
+                "vehicle_id": "1"
+              }
+            },
+            "3": {
+              "spot_type": 1,
+              "vehicle": {
+                "vehicle_type": 1,
+                "vehicle_id": "4"
+              }
+            },
+            "4": {
+              "spot_type": 1,
+              "vehicle": {
+                "vehicle_type": 1,
+                "vehicle_id": "5"
+              }
+            },
+            "5": {
+              "spot_type": 1,
+              "vehicle": {
+                "vehicle_type": 1,
+                "vehicle_id": "6"
+              }
+            },
+            "6": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "7": {
+              "spot_type": 2,
+              "vehicle": {
+                "vehicle_type": 2,
+                "vehicle_id": "2"
+              }
+            },
+            "8": {
+              "spot_type": 2,
+              "vehicle": {
+                "vehicle_type": 2,
+                "vehicle_id": "2"
+              }
+            },
+            "9": {
+              "spot_type": 2,
+              "vehicle": {
+                "vehicle_type": 2,
+                "vehicle_id": "2"
+              }
+            },
+            "10": {
+              "spot_type": 2,
+              "vehicle": {
+                "vehicle_type": 2,
+                "vehicle_id": "2"
+              }
+            },
+            "11": {
+              "spot_type": 2,
+              "vehicle": {
+                "vehicle_type": 2,
+                "vehicle_id": "2"
+              }
+            }
+          }
+        },
+        "1": {
+          "spots": {
+            "12": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "13": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "14": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "15": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "16": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "17": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "18": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "19": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "20": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "21": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "22": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "23": {
+              "spot_type": 2,
+              "vehicle": {}
+            }
+          }
+        },
+        "2": {
+          "spots": {
+            "24": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "25": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "26": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "27": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "28": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "29": {
+              "spot_type": 1,
+              "vehicle": {}
+            }
+          }
+        },
+        "3": {
+          "spots": {
+            "30": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "31": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "32": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "33": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "34": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "35": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "36": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "37": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "38": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "39": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "40": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "41": {
+              "spot_type": 2,
+              "vehicle": {}
+            }
+          }
+        },
+        "4": {
+          "spots": {
+            "42": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "43": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "44": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "45": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "46": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "47": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "48": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "49": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "50": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "51": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "52": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "53": {
+              "spot_type": 2,
+              "vehicle": {}
+            }
+          }
+        },
+        "5": {
+          "spots": {
+            "54": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "55": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "56": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "57": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "58": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "59": {
+              "spot_type": 1,
+              "vehicle": {}
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "rows": {
+        "0": {
+          "spots": {
+            "60": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "61": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "62": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "63": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "64": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "65": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "66": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "67": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "68": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "69": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "70": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "71": {
+              "spot_type": 2,
+              "vehicle": {}
+            }
+          }
+        },
+        "1": {
+          "spots": {
+            "72": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "73": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "74": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "75": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "76": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "77": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "78": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "79": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "80": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "81": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "82": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "83": {
+              "spot_type": 2,
+              "vehicle": {}
+            }
+          }
+        },
+        "2": {
+          "spots": {
+            "84": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "85": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "86": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "87": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "88": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "89": {
+              "spot_type": 1,
+              "vehicle": {}
+            }
+          }
+        },
+        "3": {
+          "spots": {
+            "90": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "91": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "92": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "93": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "94": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "95": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "96": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "97": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "98": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "99": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "100": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "101": {
+              "spot_type": 2,
+              "vehicle": {}
+            }
+          }
+        },
+        "4": {
+          "spots": {
+            "102": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "103": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "104": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "105": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "106": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "107": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "108": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "109": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "110": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "111": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "112": {
+              "spot_type": 2,
+              "vehicle": {}
+            },
+            "113": {
+              "spot_type": 2,
+              "vehicle": {}
+            }
+          }
+        },
+        "5": {
+          "spots": {
+            "114": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "115": {
+              "spot_type": 0,
+              "vehicle": {}
+            },
+            "116": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "117": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "118": {
+              "spot_type": 1,
+              "vehicle": {}
+            },
+            "119": {
+              "spot_type": 1,
+              "vehicle": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
