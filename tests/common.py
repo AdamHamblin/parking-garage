@@ -1,8 +1,3 @@
-import logging
-import os
-import sys
-
-
 class Request(object):
     def __init__(self, body=None, headers=None, context=None, path='', params=None):
         self.body = body
