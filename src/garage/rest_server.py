@@ -156,10 +156,9 @@ class MicroRestServer(object):
 
         dir_path = os.path.dirname(os.path.realpath(__file__))
         head, tail = os.path.split(dir_path)
-        src, tail = os.path.split(head)
-        project_root, tail = os.path.split(src)
+        project_root, tail = os.path.split(head)
 
-        app_home = os.path.join(project_root, '.env')
+        app_home = project_root
 
         if not app_home.strip():
             app_home = os.getcwd()
@@ -215,11 +214,9 @@ class MicroRestServer(object):
 
         return version_retrieved
 
-    # retrieves config file
-    @staticmethod
-    def get_config_file(config_file=None):
+    def get_config_file(self, config_file=None):
         if config_file is None:
-            config_file_to_process = os.path.join(os.getcwd(), 'setup.cfg')
+            config_file_to_process = os.path.join(self.get_current_app_home(), 'setup.cfg')
         else:
             config_file_to_process = config_file
 
